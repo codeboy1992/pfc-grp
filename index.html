@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="scoreboard">
+    <!-- Saisie du prénom -->
+    <div class="player-name">
+        <label for="player-name-input">Entrez votre prénom : </label>
+        <input type="text" id="player-name-input" placeholder="Votre prénom">
+        <button id="set-name">Commencer</button>
+        <p id="error-message" style="color: red; display: none;">Veuillez entrer un prénom valide !</p>
+    </div>
+    
+
+    <div class="scoreboard" style="display: none;">
         <div id="player-score">Joueur : 0</div>
         <div id="round-result">Manche gagnée par : -</div>
         <div id="ia-score">IA : 0</div>
     </div>
 
-    <div class="game">
+    <div class="game" style="display: none;">
         <h1>Pierre, Feuille, Ciseaux</h1>
         <div class="choices">
             <button id="Pierre">🪨 Pierre</button>
@@ -27,6 +36,16 @@
         <button id="restart" style="display:none;">Recommencer</button>
     </div>
 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
+
+    <footer>
+        <button class="help"><a href="help.html"  rel="noopener noreferrer">HELP</a></button>
+        
+    </footer>
 </body>
+
+
 </html>
