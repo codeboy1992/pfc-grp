@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre, Feuille, Ciseaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <div id="player-score">Joueur : 0</div>
+        <div id="round-result">Manche gagnée par : -</div>
+        <div id="ia-score">IA : 0</div>
+    </div>
+
+    <div class="game">
+        <h1>Pierre, Feuille, Ciseaux</h1>
+        <div class="choices">
+            <button id="Pierre">🪨 Pierre</button>
+            <button id="Feuille">📄 Feuille</button>
+            <button id="Ciseaux">✂️ Ciseaux</button>
+        </div>
+        <div id="results">
+            <p>Joueur : <span id="player-choice">-</span></p>
+            <p>IA : <span id="ia-choice">-</span></p>
+        </div>
+        <button id="restart" style="display:none;">Recommencer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
